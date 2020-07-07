@@ -1,0 +1,144 @@
+/*corpo da página*/
+body,ul , li ,p {
+margin: 0px;
+padding: 0px;
+list-style: none;
+font-size: 1.2rem;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+a{
+    text-decoration: none;
+    color:pink;
+}
+/*menu*/
+.header {
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(3, 1, 1, 0.521);
+    top:0;  
+}
+.menu{
+display: flex;
+}
+.menu li{
+    margin-left: 20px;
+}
+.menu li a{
+    display: block;
+    padding:  10px;
+}
+
+/*banner*/
+.banner-img{
+    width: 100%;
+    height: 570px;
+    position: relative;
+}
+
+.banner-img::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* 1 legenda e 1 imagem*/
+.f1 img{
+    width: 100%;
+    height: 450px;
+}
+.leg-banner {
+    position: absolute;
+    top: 250px;
+    left: 850px;
+    color:rgb(255, 183, 183);
+    font-size: 45px;
+    width: 300px;
+    text-align: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/*2 leganda e 2 imagem*/
+.f3 img{
+    width: 100%;
+    height: 450px;
+}
+.leg2 {
+    position: absolute;
+    top: 1600px;
+    left: 25%;
+    color:coral;
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+}
+/*3 legenda e 3 imagem*/
+.f4 img{
+    width: 100%;
+    height: 450px;
+}
+.leg3 {
+    position: absolute;
+    top: 2510px;
+    left: 30px;
+    color: rgb(238, 162, 162);
+    font-size: 30px;
+    width: 25%;
+    text-align: left;
+}
+/*Autora*/
+.corpo-autora {
+    grid-template-columns: 1fr;
+}
+.conteudo-autora{
+    align-items: center;
+    margin: 65px;
+    padding: 10px;
+    
+    background-color:pink;
+    color:white;
+    display:table;
+    height: 400px;
+    width: 90%;
+}
+.img-autora{
+    height: 270px;
+    width: 20%;
+    display: table-cell;
+    margin: 25px;
+    padding: 35px;
+
+}
+.texto-autora {
+    display: table-cell;
+    color: beige; 
+    left: 10px;
+    width: 50%;
+    text-align: center;
+    font-size: 40px;
+
+    position: absolute;
+    top: 2000px;
+    left: 40%;
+}
+#autora{
+    color: coral;
+    font-size: 40px;
+}
+/*fazer o risco*/
+.texto-autora:after {
+    position: absolute;
+    top: 60px;
+    left: 45%;
+    
+    content: " ";
+    width: 90px;
+    height: 2px;
+    background-color: coral;
+}

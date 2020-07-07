@@ -1,0 +1,143 @@
+/* Parte que segura tudo*/
+.corpo-livro {
+    grid-template-columns: 1fr;
+}
+.conteudo-livro{
+    align-items: center;
+    margin: 65px;
+    padding: 5px;
+    
+    background-color:pink;
+    color:white;
+    display:table;
+    height:600px;
+    width: 90%;
+}
+/*Livro*/
+#livros{
+    top: 730px;
+    text-align: center;
+    margin: 10px 0;
+    display: block;
+    padding-bottom: 15px;
+    color: darksalmon;
+}
+/*p1 livro*/
+.l1{
+    display: flex;
+    position: absolute;
+    height: 300px;
+    left: 3%;
+    top: 800px;
+    width: 30%;
+}
+.l1 img{
+    max-width: 100%;
+    position: relative;
+    transition: transform 0.6s;
+}
+.l1 figure:hover img{
+    transform: translateY(-50px);
+}
+.l1 figcaption{
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+
+    padding: 10px;
+    background-color: crimson;
+    color: blanchedalmond;
+    text-align: center;
+
+    opacity: 0;
+    transform:translateY(100%);
+    transition: transform 1.0s ,opacity 0.1s 0.3s ;
+}
+.l1 figure:hover figcaption {
+ opacity: 1;
+ transform: translateY(0px);
+ transition: transform 0.6s, opacity 0.1s;
+}
+/*p2 livro*/
+.l2{
+    display: flex;
+    position: absolute;
+    height: 300px;
+    left: 34%;
+    top: 800px;
+    width: 30%;
+}
+.l2 img{
+    
+    max-width: 100%;
+    position: relative;
+    transition: transform 0.6s;
+}
+.l2 figure:hover img{
+    transform: translateY(-50px);
+}
+.l2 figcaption{
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 260px;
+
+    padding: 10px;
+    background-color: crimson;
+    color: blanchedalmond;
+    text-align: center;
+
+    opacity: 0;
+    transform:translateY(100%);
+    transition: transform 0.6s ,opacity 0.1s 0.3s ;
+}
+.l2 figure:hover figcaption {
+ opacity: 1;
+ transform: translateY(0px);
+ transition: transform 0.6s, opacity 0.1s;
+}
+/*p3 livro*/
+.l3{
+    display: flex;
+    position: absolute;
+    height: 300px;
+    left: 65%;
+    top: 800px;
+    width: 30%;
+}
+.l3 img{
+    max-width: 100%;
+    position: relative;
+    transition: transform 0.6s;
+
+}
+.l3 figure:hover img{
+    transform: translateY(-50px);
+}
+.l3 figcaption{
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 240px;
+
+    padding: 10px;
+    background-color: crimson;
+    color: blanchedalmond;
+    text-align: center;
+
+    opacity: 0;
+    transform:translateY(100%);
+    transition: transform 0.6s ,opacity 0.1s 0.3s ;
+}
+.l3 figure:hover figcaption {
+ opacity: 1;
+ transform: translateY(0px);
+ transition: transform 0.6s, opacity 0.1s;
+}
