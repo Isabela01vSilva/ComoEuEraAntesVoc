@@ -1,143 +1,60 @@
-/* Parte que segura tudo*/
-.corpo-livro {
-    grid-template-columns: 1fr;
-}
-.conteudo-livro{
-    align-items: center;
-    margin: 65px;
-    padding: 5px;
+.cont-livro{
+    width: 100%;
+    height: 800px;
+    background-color: white;
     
-    background-color:pink;
-    color:white;
-    display:table;
-    height:600px;
-    width: 90%;
 }
-/*Livro*/
-#livros{
-    top: 730px;
-    text-align: center;
-    margin: 10px 0;
-    display: block;
-    padding-bottom: 15px;
-    color: darksalmon;
+.cont-livro h2{
+    padding-top: 100px;
+    padding-bottom: 40px; 
+    color: crimson;
+    font-size: 40px;
 }
-/*p1 livro*/
-.l1{
+.livro{
+    background-color:crimson;
+    padding:30px 50px;  /* Distanciamento entre os livros da página*/
     display: flex;
-    position: absolute;
-    height: 300px;
-    left: 3%;
-    top: 800px;
-    width: 30%;
+    width: 80%;
+    margin-left: 100px; /* não deixando a div colada ao lado left */
 }
-.l1 img{
-    max-width: 100%;
-    position: relative;
-    transition: transform 0.6s;
+.livro-1 {
+background-image: url("../img/L1.jpg");
 }
-.l1 figure:hover img{
-    transform: translateY(-50px);
+.livro-2 {
+background-image: url("../img/L2.jpg");
 }
-.l1 figcaption{
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 240px;
-
-    padding: 10px;
-    background-color: crimson;
-    color: blanchedalmond;
+.livro-3 {
+background-image: url("../img/L3.jpg"); 
+}
+.livro-1, .livro-2, .livro-3{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:10px; /* distanciar os livros deles mesmos */
+    width: 400px;
+    height: 500px;
+}
+/* Autora */
+.conteudo-autora{
+    padding:70px 120px;
+    height: 500px;
+}
+.text-autora{
+    width: 50%;
+    float: right;
+    font-size: 21px;
+    background-color: #ff7675;
     text-align: center;
-
-    opacity: 0;
-    transform:translateY(100%);
-    transition: transform 1.0s ,opacity 0.1s 0.3s ;
 }
-.l1 figure:hover figcaption {
- opacity: 1;
- transform: translateY(0px);
- transition: transform 0.6s, opacity 0.1s;
+.ttl-autora{
+    font-size: 30px;
 }
-/*p2 livro*/
-.l2{
-    display: flex;
-    position: absolute;
-    height: 300px;
-    left: 34%;
-    top: 800px;
-    width: 30%;
-}
-.l2 img{
-    
-    max-width: 100%;
-    position: relative;
-    transition: transform 0.6s;
-}
-.l2 figure:hover img{
-    transform: translateY(-50px);
-}
-.l2 figcaption{
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 260px;
-
-    padding: 10px;
-    background-color: crimson;
-    color: blanchedalmond;
-    text-align: center;
-
-    opacity: 0;
-    transform:translateY(100%);
-    transition: transform 0.6s ,opacity 0.1s 0.3s ;
-}
-.l2 figure:hover figcaption {
- opacity: 1;
- transform: translateY(0px);
- transition: transform 0.6s, opacity 0.1s;
-}
-/*p3 livro*/
-.l3{
-    display: flex;
-    position: absolute;
-    height: 300px;
-    left: 65%;
-    top: 800px;
-    width: 30%;
-}
-.l3 img{
-    max-width: 100%;
-    position: relative;
-    transition: transform 0.6s;
-
-}
-.l3 figure:hover img{
-    transform: translateY(-50px);
-}
-.l3 figcaption{
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 240px;
-
-    padding: 10px;
-    background-color: crimson;
-    color: blanchedalmond;
-    text-align: center;
-
-    opacity: 0;
-    transform:translateY(100%);
-    transition: transform 0.6s ,opacity 0.1s 0.3s ;
-}
-.l3 figure:hover figcaption {
- opacity: 1;
- transform: translateY(0px);
- transition: transform 0.6s, opacity 0.1s;
+.img-autora {
+    height: 520px;
+    width: 400px;
+    float: left;
+    background-image: url("../img/jojo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
