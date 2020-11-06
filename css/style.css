@@ -90,8 +90,21 @@ h2{
     color: #ff7675;
     font-size:25px;
 }
-.fim-pagina img{
-    width: 500px;
-    float: right;
-    margin-right: 150px;
+ .final-pagina{
+    background-color: #ff7675;
+    width: 100%;
+    height: 500px;
 }
+.final-pagina img{
+    width: 500px;
+    float: left;
+}
+.icones{
+    transform: skew(-40deg); /*DEIXAR A IMAGEM NA DIAGONAL*/
+    background-color: #ff7675;
+    width: 30%;
+    float: right;
+    height: 500px;
+    margin-left: 400px;
+    position: absolute;
+} 

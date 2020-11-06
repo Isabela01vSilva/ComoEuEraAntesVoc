@@ -1,17 +1,32 @@
 .cont-livro{
     width: 100%;
     height: 800px;
-    background-color: white;
-    
-}
-.cont-livro h2{
     padding-top: 100px;
     padding-bottom: 40px; 
-    color: crimson;
-    font-size: 40px;
+    background-color: white;
 }
+hr {
+    border: none; /* Excluindo as bordar de baixo */
+    border-top: medium double pink; /* fazer os riscos */
+    overflow: visible; /* Deixando a mensagem por cima */
+    text-align: center; /* Deixando a mensagem no meio */
+    width: 50%;
+    float: right;
+    margin-right: 300px;
+  }
+hr::after {
+    content: "Livros";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 45px;
+    padding: 0 0.3em; /* Distancias das linhas nas laterais */
+    background: white;
+    color:#ef85ad;
+  }
 .livro{
-    background-color:crimson;
+    background-color: pink;
+    border: white solid 2 px;
     padding:30px 50px;  /* Distanciamento entre os livros da página*/
     display: flex;
     width: 80%;
@@ -26,7 +41,7 @@ background-image: url("../img/L1.jpg");
 .livro-1 p, .livro-2 p, .livro-3 p{
     width: 100%;
     height: 450px;
-    background-color: crimson;
+    background-color: #ff7675;
     padding-top: 10px;/* Ajustando o top do texto dentro da div que exibe a mensagem */
     font-size: 22px;
     color: blanchedalmond;
