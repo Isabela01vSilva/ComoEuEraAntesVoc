@@ -20,6 +20,26 @@
 .livro-1 {
 background-image: url("../img/L1.jpg");
 }
+.livro-1:hover, .livro-2:hover, .livro-3:hover  {
+   transform: translateY(-20px); /* O tamanho que a imagem vai saltar */
+} 
+.livro-1 p, .livro-2 p, .livro-3 p{
+    width: 100%;
+    height: 450px;
+    background-color: crimson;
+    padding-top: 10px;/* Ajustando o top do texto dentro da div que exibe a mensagem */
+    font-size: 22px;
+    color: blanchedalmond;
+    text-align: center;
+    opacity: 0; /* Um jeito de esconder a div */
+    transform:translateY(50%); 
+}
+.livro-1:hover p, .livro-2:hover p, .livro-3:hover p{
+ opacity: 1;
+ transform: translateY(5px); /* Top da mensagem */
+ transition: transform 1.5s; /* O tempo de quando passa o mouse */
+  
+} 
 .livro-2 {
 background-image: url("../img/L2.jpg");
 }
