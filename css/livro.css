@@ -2,12 +2,11 @@
     width: 100%;
     height: 800px;
     padding-top: 100px;
-    padding-bottom: 40px; 
-    background-color: white;
+  /*   padding-bottom: 20px;  */
 }
 hr {
     border: none; /* Excluindo as bordar de baixo */
-    border-top: medium double pink; /* fazer os riscos */
+    border-top: medium double#ef85ad; /* fazer os riscos */
     overflow: visible; /* Deixando a mensagem por cima */
     text-align: center; /* Deixando a mensagem no meio */
     width: 50%;
@@ -22,15 +21,16 @@ hr::after {
     font-size: 45px;
     padding: 0 0.3em; /* Distancias das linhas nas laterais */
     background: white;
-    color:#ef85ad;
+    color:black;
   }
 .livro{
-    background-color: pink;
+    background-color: #ef85ad;
     border: white solid 2 px;
     padding:30px 50px;  /* Distanciamento entre os livros da página*/
     display: flex;
     width: 80%;
     margin-left: 100px; /* não deixando a div colada ao lado left */
+    
 }
 .livro-1 {
 background-image: url("../img/L1.jpg");
@@ -41,10 +41,10 @@ background-image: url("../img/L1.jpg");
 .livro-1 p, .livro-2 p, .livro-3 p{
     width: 100%;
     height: 450px;
-    background-color: #ff7675;
+    background-color: black;
     padding-top: 10px;/* Ajustando o top do texto dentro da div que exibe a mensagem */
     font-size: 22px;
-    color: blanchedalmond;
+    color: #faf4de;
     text-align: center;
     opacity: 0; /* Um jeito de esconder a div */
     transform:translateY(50%); 
@@ -71,15 +71,19 @@ background-image: url("../img/L3.jpg");
 }
 /* Autora */
 .conteudo-autora{
-    padding:70px 120px;
-    height: 500px;
+    padding-top:70px;
+    height: 560px;
+    width: 100%;
 }
 .text-autora{
-    width: 50%;
-    float: right;
+    width: 40%;
     font-size: 21px;
-    background-color: #ff7675;
-    text-align: center;
+    margin-right: 70px;
+    padding: 17px 17px;
+    text-align: justify;
+    float: right;
+    padding-top: 20px;
+    border: medium double black;
 }
 .ttl-autora{
     font-size: 30px;
@@ -88,8 +92,25 @@ background-image: url("../img/L3.jpg");
     height: 520px;
     width: 400px;
     float: left;
+    margin-left: 150px;
     background-image: url("../img/jojo.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.icon-autora{
+    padding-top:30px;
+    padding:50px 10px 60px 10px;
+}
+.icon-autora img{
+  width: 50px;
+}
+.icon-autora img:hover{
+  background-color: pink;
+   border-radius: 30px;
+}
+.icon-autora a{
+    color:  rgb(226, 80, 195);
+    padding:12px 12px;
+    
 }

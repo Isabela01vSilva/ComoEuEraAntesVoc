@@ -8,27 +8,33 @@
 }
 .sobre-filme{
     padding-top: 50px;
-    font-size: 20px;
+    font-size: 23px;
     display: flex;
 }
 .sobre-filme p{
-    width: 49%;
+    width:55%;
+    background-color: pink;
+    padding-top: 30px;
+    padding: 30px 30px;
 }
 .sobre-filme a{
-        color: rgb(226, 80, 195);
-        text-decoration: none;
+    color: rgb(226, 80, 195);
 }
 .img-filme {
-float: right;
-width: 420px;
-height: 550px;
-margin-left: 40px;
+    float: right;
+    width: 420px;
+    height: 550px;
+    box-shadow: 3px 3px 10px 5px #000;
+    -moz-box-shadow: 3px 3px 10px 5px #000;
+    -webkit-box-shadow: 3px 3px 10px 5px #000;
+    -o-box-shadow: 3px 3px 10px 5px #000;
+    margin-left: 40px;
 }
 /* Personagens */
+
 .personagens h2{
     padding-top: 100px;
-    padding-bottom: 40px; 
-    color: crimson;
+    margin-bottom: 40px;
     font-size: 40px;
 }
 .cont-personagens{
@@ -63,11 +69,15 @@ display: flex;
 }
 /* Trailer */
 .traile{
-    margin-top: 70px;
+    margin-top:70px;
     margin-left:50px;
     background-color: pink;
     width: 95%;
     height: 560px;
+    box-shadow: 3px 2px 15px 5px grey;
+    -moz-box-shadow: 3px 2px 15px 5px grey;
+    -webkit-box-shadow: 3px 2px 15px 5px grey;
+    -o-box-shadow: 3px 2px 5px 15px grey;
 }
  iframe{
     border:none;
